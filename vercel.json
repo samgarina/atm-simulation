@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "atm_project/wsgi.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "atm_project/wsgi.py" }
+  ]
+}
